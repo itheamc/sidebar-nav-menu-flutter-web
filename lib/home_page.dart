@@ -26,38 +26,6 @@ class _HomepageState extends State<Homepage> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         ASideMenu(
-          headerBuilder: (duration, value) {
-            return Container(
-              padding: const EdgeInsets.only(top: 25.0, bottom: 30.0),
-              child: Row(
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.only(left: 17.0, right: 15.0),
-                    child: Icon(
-                      Icons.facebook,
-                      size: 36.0,
-                    ),
-                  ),
-                  Flexible(
-                    child: Transform.scale(
-                      scale: value,
-                      child: Padding(
-                        padding: const EdgeInsets.only(right: 15.0),
-                        child: Text(
-                          "Aarohi Botique".toUpperCase(),
-                          style: theme.textTheme.headline6?.copyWith(
-                            fontWeight: FontWeight.bold,
-                          ),
-                          maxLines: 1,
-                          overflow: TextOverflow.fade,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            );
-          },
           itemsCount: 5,
           itemsBuilder: (_, duration, value, index) {
             return ASideMenuItem(

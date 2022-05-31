@@ -9,13 +9,11 @@ class ASideMenu extends StatefulWidget {
   final Widget Function(
           BuildContext context, Duration duration, double value, int index)
       itemsBuilder;
-  final Widget Function(Duration duration, double value)? headerBuilder;
 
   const ASideMenu({
     Key? key,
     required this.itemsCount,
     required this.itemsBuilder,
-    this.headerBuilder,
     this.minWidth = 80.0,
     this.maxWidth = 260.0,
     this.elevation = 10.0,
